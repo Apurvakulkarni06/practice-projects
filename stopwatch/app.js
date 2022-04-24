@@ -35,6 +35,7 @@ stopButton.addEventListener("click", function () {
 });
 resetButton.addEventListener("click", function () {
     console.log("reset the watch");
+    clearInterval(timerId);
     clockTiming = __assign({}, InitialClockTiming);
     setClockContent(clockTiming);
 });
@@ -42,13 +43,13 @@ function setClock() {
     var existingSeconds = clockTiming.second;
     var existingMinutes = clockTiming.minute;
     clockTiming.second += 1;
-    if (existingSeconds > 5) {
+    if (existingSeconds >= 5) {
         // add in minutes
         console.log("updating the minute");
         clockTiming.second = 0;
         clockTiming.minute += 1;
     }
-    if (existingMinutes > 5) {
+    if (existingMinutes >= 5) {
         // add in minutes
         console.log("updating the hour");
         clockTiming.second = 0;

@@ -36,6 +36,7 @@ stopButton.addEventListener("click", ()=>{
 })
 resetButton.addEventListener("click", ()=>{
     console.log("reset the watch");
+    clearInterval(timerId);
     clockTiming = {...InitialClockTiming}
     setClockContent(clockTiming)
 })
