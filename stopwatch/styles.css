@@ -1,0 +1,9 @@
+.clock-numbers span {
+    display: inline-block;
+    padding: 22px;
+    margin: 10px;
+    font-variant-numeric: ordinal;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Source Sans Pro";
+}
