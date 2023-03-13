@@ -1,0 +1,11 @@
+
+
+user <-> rooms
+
+user -> messages
+
+message and room one to one relationships
+
+user and messages one to many relationships
+
+user and rooms many to many relationships
